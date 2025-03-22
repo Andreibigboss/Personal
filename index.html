@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrei Burza - Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="wave"><span></span></div>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">AB</div>
+            <ul class="nav-links">
+                <li><a href="#home">Acasă</a></li>
+                <li><a href="#about">Despre</a></li>
+                <li><a href="#services">Servicii</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Andrei Burza</h1>
+            <p class="subtitle">Full Stack Developer</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn primary">Contactează-mă</a>
+                <a href="#services" class="btn secondary">Vezi Serviciile</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="about-title">Despre mine</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Sunt un dezvoltator pasionat cu experiență în crearea de soluții web și mobile moderne. 
+                    Focusul meu principal este dezvoltarea de aplicații performante și ușor de utilizat.</p>
+                    <div class="skills">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Node.js</span>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Servicii Oferite</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Dezvoltare de site-uri web moderne și responsive folosind cele mai noi tehnologii.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>App Development</h3>
+                    <p>Dezvoltare de aplicații mobile native și cross-platform pentru iOS și Android.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-search"></i>
+                    <h3>SEO Optimization</h3>
+                    <p>Optimizare pentru motoarele de căutare pentru a îmbunătăți vizibilitatea online.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Custom Solutions</h3>
+                    <p>Soluții software personalizate pentru nevoile specifice ale afacerii dumneavoastră.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-content">
+                <form class="contact-form" id="contact-form">
+                    <input type="text" name="user_name" placeholder="Numele tău" required>
+                    <input type="email" name="user_email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Mesajul tău" required></textarea>
+                    <button type="submit" class="btn primary">Trimite Mesaj</button>
+                </form>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>andreiburza812@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+40 771 087 038</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Arad, România</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Andrei Burza. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("OLIUjzE6U8d2Lv-03");
+        })();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
